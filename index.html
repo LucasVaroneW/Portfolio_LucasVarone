@@ -12,7 +12,7 @@
         href='https://blogger.googleusercontent.com/img/a/AVvXsEj_mki8HZctnsjbx6Vk9L4Da_SWVVOdEI7WWol-9a-lHeICOUi0gkAEtqbihz4J8VFZYDxPFVJ0Yo9Sbw4SGcJCrVW2TEt5r-VZcv1Y6QA9U3zz2za3G3y7DKjSjOrweDKaK0Ei0bd8jGEtu8TgUi55k55QSiYg3czG6ua19wLnGtDCvHQaG7CSuXW0=s197'
         rel='shortcut icon' type='image/x-png'/>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src="https://kit.fontawesome.com/7b5fb2de65.js" crossorigin="anonymous" async></script>
+    <script src="https://kit.fontawesome.com/6a40a5ac66.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -20,7 +20,7 @@
     <!-- Navabar de todas la paginas  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container">
-        <a class="navbar-brand__title" href="#home"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEj_mki8HZctnsjbx6Vk9L4Da_SWVVOdEI7WWol-9a-lHeICOUi0gkAEtqbihz4J8VFZYDxPFVJ0Yo9Sbw4SGcJCrVW2TEt5r-VZcv1Y6QA9U3zz2za3G3y7DKjSjOrweDKaK0Ei0bd8jGEtu8TgUi55k55QSiYg3czG6ua19wLnGtDCvHQaG7CSuXW0=s197" id="logo">LUCAS VARONE</a>
+        <a class="navbar-brand__title" href="#home"><img src="./imagenes/logo.png" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,9 +35,12 @@
                     <a class="nav-link" href="#ejemploCarrusel">ACERCA DE MI</a>
                 </li>
                 <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="1">
+                  <a class="nav-link" href="#ejemploCarrusel">HABILIDADES</a>
+              </li>
+                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="2">
                     <a class="nav-link" href="#ejemploCarrusel">PORTFOLIO</a>
                 </li>
-                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="2">
+                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="3">
                     <a class="nav-link" href="#ejemploCarrusel">CONTACTO</a>
                 </li>
             </ul>
@@ -51,7 +54,7 @@
         <div class="home__background"></div>
         <div class="home__description">
             <span class="home__title--primary" id="item">¡Bienvenidos!</span>
-            <h1 class="home__title"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEj_mki8HZctnsjbx6Vk9L4Da_SWVVOdEI7WWol-9a-lHeICOUi0gkAEtqbihz4J8VFZYDxPFVJ0Yo9Sbw4SGcJCrVW2TEt5r-VZcv1Y6QA9U3zz2za3G3y7DKjSjOrweDKaK0Ei0bd8jGEtu8TgUi55k55QSiYg3czG6ua19wLnGtDCvHQaG7CSuXW0=s197" id="logo2">Lucas Varone</h1>
+            <h1 class="home__title"><img src="./imagenes/logo.png" id="logo2">Lucas Varone</h1>
             <div>
               <span class="home__title--secondary" id="item">Front-end Developer</span>
             </div>
@@ -72,16 +75,17 @@
         ></li>
         <li data-target="#ejemploCarrusel" data-slide-to="1"></li>
         <li data-target="#ejemploCarrusel" data-slide-to="2"></li>
+        <li data-target="#ejemploCarrusel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item 1 active">
+          <h2 class="section__title">Sobre mi:</h2>
           <section id="about">
             <div class="container">
-                <h2 class="section__title"><b>Sobre mi:</b></h2>
                 <div class="about__grid">
                   <div class="about__description">
-                    <picture class="foto_perfil">
-                      <source type="image/jpg" srcset="https://blogger.googleusercontent.com/img/a/AVvXsEhjxeM867Cn6hJDXlroPquxWsRtol6aXJqWHStQUsbyv0hlRqPXSqHQAJjOUkqITuo4bbewsfshDbI_b0DBjGgUUO06nxlFl46no9LngOuR3TVX_aTmdDprTEqnZkR4NJ9PdKI2eY0al1kQlIU85tqx9Euw2Ul6UyOCCK0e7NYoHL3HoHCucU89eAyL=s1101" />
+                    <picture class="profile__pic">
+                      <source type="image/jpg" src="./imagenes/perfil.jpg" />
                       <img class="home__profile" alt="picture profile" src="./imagenes/perfil.jpg"/>
                     </picture>
                     <p class="text_about">
@@ -98,69 +102,81 @@
               </div>
             </div>
           </section>
-          <section id="skill">
-            <div class="container">
-              <div class="about__skills">
-                <div class="skill__title">
-                  <h2 class="section__title"><b>Mis habilidades:</b></h2>
-                </div>
-                <div class="skill__item">
-                  <i class="fab fa-html5" style="color: #e34c26;"></i>
-                  <div class="skill__name">HTML</div>
-                </div>
-                <div class="skill__item">
-                  <i class="fab fa-css3-alt" style="color: #264de4;"></i>
-                  <div class="skill__name">CSS</div>
-                </div>
-                <div class="skill__item">
-                  <i class="fab fa-js" style="color:#f0db4f ;"></i>
-                  <div class="skill__name">Javascript</div>
-                </div>
-                <!-- <div class="skill__item">
-                  <i class="fab fa-react" style="color: var(--blueReact);"></i>
-                  <div class="skill__name">React</div>
-                </div> -->
-                <div class="skill__item">
-                  <i class="fab fa-git-alt" style="color: #e34c26;"></i>
-                  <div class="skill__name">GIT</div>
-                </div>
-                <div class="skill_item" id="bootstrap">
-                  <i class="fab fa-bootstrap" style="color:#563d7c;"></i>
-                  <div class="skill__name" id="bt">Bootstrap</div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
         
         <div class="carousel-item 2">
-          <section id="portfolio" class="portfolio">
+          <h2 class="section__title">Mis habilidades:</h2>
+          <section id="skill">
             <div class="container">
-                <h2 class="section__title"><b>Portfolio</b></h2>
-                <div class="portfolio__grid">
-                  <div class="portfolio__item">
-                    <h2 class="portfolio__title">Oye tu musica</h2>
-                    <p class="portfolio__description">Oye tu musica es un proyecto de estudio Que realize mientras estudiaba
-                      en Next_U en el cual se me especificaba el tipo de diseño que querían y se ponia a prueba mis conocimientos
-                      de bootstrap, Javascript, css, html. Además de estar todas las canciones cargadas con ajax.                
-                    </p>
-                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/Oye_tu_musica" role="button" id="button__git">GitHub</a>
-                  </div>
-                  <div class="portfolio__item" id="delay_2">
-                    <h2 class="portfolio__title">Portfolio</h2>
-                    <p class="portfolio__description">Si quiere ver o descargar el código de éste portfolio puede verlo desde aquí.                
-                    </p>
-                    <a class="btn btn-outline-light" href="#" role="button" id="button__git">GitHub</a>
-                  </div>
+              <div class="row about__skills">
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <i class="fab fa-html5" style="color: #e34c26;"></i>
+                  <div class="skill__name">HTML</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+                  <div class="skill__name">CSS</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <i class="fab fa-js" style="color:#f0db4f ;"></i>
+                  <div class="skill__name">Javascript</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <i class="fab fa-git-alt" style="color: #e34c26;"></i>
+                  <div class="skill__name">GIT</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <i class="fab fa-bootstrap" style="color:#563d7c;"></i>
+                  <div class="skill__name">Bootstrap</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <i class="fa-brands fa-react" style="color: var(--blueReact);"></i>
+                  <div class="skill__name">React</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <img id="skill__img" src="./imagenes/mysql.png" style="color: #26aee4;"></i>
+                  <div class="skill__name">MySql</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 skill__item">
+                  <img id="skill__img" src="./imagenes/postgresql.png" style="color: #26aee4;"></i>
+                  <div class="skill__name">PostreSQL</div>
+                </div>
               </div>
             </div>
           </section>
         </div>
 
         <div class="carousel-item 3">
+          <h2 class="section__title">Portfolio:</h2>
+          <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="portfolio__grid">
+                  <div class="portfolio__item">
+                    <h2 class="portfolio__title">Paseando Ando</h2>
+                    <p class="portfolio__description">Paseando ando es una aplicación de React, 
+                      en la cual se usa la api de Google place para lograr extraer 
+                      toda la información de un lugar. Si bien es un proyecto académico, 
+                      el objetivo de éste es aprender al completo como funciona React.Js.                
+                    </p>
+                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/paseando_ando" role="button" id="button__git">GitHub</a>
+                  </div>
+                  <div class="portfolio__item" id="delay_2">
+                    <h2 class="portfolio__title">Escuela Aprende y Disfruta</h2>
+                    <p class="portfolio__description">La pagina Aprende y disfruta es un proyecto académico
+                       en el cuál se hacía hincapié en mis habilidades 
+                       con JavaScript, usando funciones dinámicas para modificar el DOM.               
+                    </p>
+                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/Escuela_aprende_disfruta" role="button" id="button__git">GitHub</a>
+                  </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="carousel-item 4">
+          <h2 class="section__title">Contacto:</h2>
           <section id="contact">
             <div class="container">
-              <h2 class="section__title" id="center">Contacto</h2>
               <h3 class="section__subtitle">¿Quiéres contactarme para conocer un poco más sobre mí?</h3>
               <div class="contact__grid">
                   <p>Puede contactarme a través de cualquiera de mis redes sociales.</p>
