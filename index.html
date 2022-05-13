@@ -15,7 +15,6 @@
     <script src="https://kit.fontawesome.com/6a40a5ac66.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-
 <body>
     <!-- Navabar de todas la paginas  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -27,11 +26,11 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav text-right" id="background-toggle">
                 <li class="nav-item">
-                    <a class="nav-link navbar__link" href="#home" data-ref="home">INICIO</a>
+                    <a class="nav-link" href="#home" data-ref="home">INICIO</a>
                 </li>
-                <li class="nav-item navbar__link" data-target="#ejemploCarrusel" data-slide-to="0">
+                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="0">
                     <a class="nav-link" href="#ejemploCarrusel">ACERCA DE MI</a>
                 </li>
                 <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="1">
@@ -187,9 +186,9 @@
                     <a class="contact__link" href="https://github.com/LucasVaroneW" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github-square" style="color: #e0dbdb !important;"></i>
                     </a>
-                    <a class="contact__link" href="mailto:lucasvaronebio@gmail.com" target="_blank" rel="noopener noreferrer">
-                      <i class="far fa-envelope"></i>
-                    </a>
+                    <button class="btn btn-outline contact__link" type="button" data-toggle="modal" data-target="#exampleModal" id="show__form">
+                      <i class="far fa-envelope" style="color: white;"></i>
+                    </button>
                     <a class="contact__link" href="https://www.linkedin.com/in/lucasvaronew/" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-linkedin-in" style="color: rgb(25, 56, 160) !important;"></i>
                     </a>
@@ -197,6 +196,31 @@
               </div>
             </div>
           </section>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <!-- <div class="modal-header">
+                  <button type="button" class="close bg-transparent" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div> -->
+                <div class="modal-body">
+                  <h5 class="modal-title" id="exampleModalLabel">Envieme un email:</h5>
+                  <form>
+                    <div class="form-group m-4 p-4">
+                      <label for="email">Correo Electrónico:</label>
+                      <input type="email" class="form-control border-0 bg-transparent" id="email" placeholder="ejemplo@gmail.com">
+                      <label for="text">Comentario:</label>
+                      <textarea class="form-control border-0 bg-transparent" id="text" rows="3"></textarea>
+                    </div>
+                    <div class="text-right">
+                      <button type="submit" class="btn btn-light shadow-lg p-3 mb-5 bg-white rounded" id="btn_modal">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <a

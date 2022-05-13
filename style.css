@@ -54,21 +54,23 @@ a:hover{
     width: 150px;
 }
 
-@media (max-width: 940px){
-    #navbarSupportedContent{
-        backdrop-filter: brightness(10%);
-        /* margin-left: 75% !important; */
+@media (max-width: 990px){
+    #background-toggle{
+        /* backdrop-filter: brightness(10%); */
+        width: 150px !important;
     }
 
-    .skill__item{
-        width: 50% !important;
+    .nav-item{
+        background-color: #222222ea !important;
+        width: 150px !important;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 24px !important;
     }
 
     .navbar-nav {
-        margin-left: 25% !important;
-        margin-top: 10px;
-        width: auto;
-        margin-bottom: 10px !important;
+        margin-left: auto !important;
     }
     .home__profile {
         height: 110px !important;
@@ -395,6 +397,41 @@ section {
     font-size: 40px;
 }
 
+.form__email{
+    width: 450px;
+    height: 380px;
+    z-index: 5;
+}
+
+#show__form{
+    border: inherit !important;
+}
+
+#btn_modal{
+    background-color: #112e6ede !important;
+    border: none !important;
+    color: white !important;
+    margin-right: 4px;
+}
+
+.form-control{
+    background-color: rgba(0, 0, 0, 0.603) !important;
+    border-bottom: 2px white !important;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.modal-content{
+    background-color: #222222ea !important;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 
 .contact__link:hover{
     font-size: 50px;

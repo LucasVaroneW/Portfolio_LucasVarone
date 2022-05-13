@@ -8,7 +8,6 @@ $("a[href='#home']").click(function() {
     });
 
 
-
 ScrollReveal().reveal(".navbar", { delay: 250 });
 ScrollReveal().reveal(".home__title--primary", { delay: 550 });
 ScrollReveal().reveal(".home__title", { delay: 650 });
