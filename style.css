@@ -122,7 +122,7 @@ a:hover{
         font-size: 35px !important;
     }
     .contact{
-        gap: 40px !important;
+        gap: 32px !important;
     }
     .about__description{
         grid-template-columns: 1fr !important;
@@ -387,6 +387,7 @@ section {
 
 .contact{
     display: flex;
+    flex-wrap:wrap ;
     height: 100px;
     gap: 60px;
     justify-content: center;
