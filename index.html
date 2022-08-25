@@ -20,8 +20,8 @@
 <body>
     <!-- Navabar de todas la paginas  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container">
-        <a class="navbar-brand__title" href="#home"><img src="./imagenes/logo.png" id="logo"></a>
+      <div class="header">
+        <a class="navbar-brand__title" id="logo2" href="#home"><img src="./imagenes/logo.png" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -135,6 +135,10 @@
                   <div class="skill__name">React</div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <i class="fa-brands fa-node-js" style="color:#4e844a ;"></i>
+                  <div class="skill__name">Node</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
                   <img id="skill__img" src="./imagenes/mysql.png" style="color: #26aee4;"></i>
                   <div class="skill__name">MySql</div>
                 </div>
@@ -148,24 +152,42 @@
         </div>
 
         <div class="carousel-item 3">
-          <h2 class="section__title">Portfolio:</h2>
+          <h2 class="section__title" id="section_title_portfolio">Portfolio:</h2>
           <section id="portfolio" class="portfolio">
             <div class="container">
-                <div class="portfolio__grid">
+                <div class="portfolio__grid mobile">
+                  <div class="portfolio__item" id="delay_2">
+                    <h2 class="portfolio__title">Mi Billetera Digital de Criptomonedas</h2>
+                    <p class="portfolio__description">La Billetera digital, 
+                      es un software que permite almacenar fondos en plataformas electrónicas; 
+                      realizar transacciones de pago de bienes y servicios, y recibir pagos de otras fuentes. 
+                      Estos monederos o billeteras digitales funcionan como cuentas de custodia electrónica que actúan 
+                      como depositarios de fondos en distintos tipos de monedas o hasta cupones electrónicos.               
+                    </p>
+                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/billetera_criptomonedas" role="button" id="button__git">GitHub</a>
+                  </div>
+                  <div class="portfolio__item" id="delay_2">
+                    <h2 class="portfolio__title">Blog de viajes</h2>
+                    <p class="portfolio__description">El blog de viajes es un proyecto desarrollado con Node.Js y Express.Js con la finalidad que se allí se comparta
+                      la experiencia de cada usuario en sus viajes. Este blog esta desarrollado con Mysql. Además que desarrolle su propia API Rest para que
+                       otros usuarios puedan interactuar con el sitio desde otros sistemas.             
+                    </p>
+                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/blog_de_viajes" role="button" id="button__git">GitHub</a>
+                  </div>
                   <div class="portfolio__item">
                     <h2 class="portfolio__title">Paseando Ando</h2>
-                    <p class="portfolio__description">Paseando ando es una aplicación de React, 
-                      en la cual se usa la api de Google place para lograr extraer 
-                      toda la información de un lugar. Si bien es un proyecto académico, 
-                      el objetivo de éste es aprender al completo como funciona React.Js.                
+                    <p class="portfolio__description">“Paseando Ando” consiste en una aplicación Web que ofrece al usuario posibles destinos de paseos turísticos
+                       en las cercanías a un lugar. La idea es que el usuario pueda consultar sitios turísticos para visitar indicando el lugar de origen y destino.
+                        La aplicación le ofrece una serie de sitios y le indica varias formas de llegar a ese sitio desde su origen. El usuario selecciona una ruta, la cual se
+                          muestra en un mapa. Además, cuando el usuario ingresa el destino, se le muestran algunas fotos del sitio, la calificación que tiene, el horario
+                           de apertura y comentarios si existen.                
                     </p>
                     <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/paseando_ando" role="button" id="button__git">GitHub</a>
                   </div>
                   <div class="portfolio__item" id="delay_2">
                     <h2 class="portfolio__title">Escuela Aprende y Disfruta</h2>
-                    <p class="portfolio__description">La pagina Aprende y disfruta es un proyecto académico
-                       en el cuál se hacía hincapié en mis habilidades 
-                       con JavaScript, usando funciones dinámicas para modificar el DOM.               
+                    <p class="portfolio__description">Escuela Aprende y Disfruta es un proyecto donde se muestran diferentes eventos que organiza dicha escuela y se
+                      hace uso de Vanilla JS para ofrecer soporte a varias funcionalidades dinámicas y atractivas para mostrar sus eventos en detalle.              
                     </p>
                     <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/Escuela_aprende_disfruta" role="button" id="button__git">GitHub</a>
                   </div>

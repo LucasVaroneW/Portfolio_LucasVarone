@@ -51,7 +51,7 @@ a:hover{
 }
 
 #logo2{
-    width: 150px;
+    padding-top: 16px;
 }
 
 @media (max-width: 990px){
@@ -94,9 +94,26 @@ a:hover{
         width: 80px !important;
     }
 
+    .portfolio__grid{
+        height: 600px !important;
+        width: 550px !important;
+        /* border: 1px solid rgba(79, 78, 78, 0.561); */
+        background:  transparent !important;
+        overflow-y: scroll !important;
+    }
+
+    .portfolio__grid::-webkit-scrollbar-thumb {
+        background-color: rgba(143, 140, 140, 0.507);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
     .portfolio__item{
         width: 90% !important;
-        font-size: x-small !important;
+        font-size: small !important;
     }
 
     .profile__pic{
@@ -108,6 +125,7 @@ a:hover{
     }
 
     .portfolio{
+        font-size: 13px !important;
         top:3% !important; 
     }
 
@@ -141,19 +159,31 @@ a:hover{
 
 
 section {
-    padding: 20px 0;
+    /* padding: 20px 0; */
     text-align: center;
     background: black;
 }
 
-.container {
+.header {
     width: 100%;
-    display: inherit;
+    display: flex;
     max-width: 1100px;
-    justify-content: inherit;
     margin: 0 auto;
     padding: 0 20px;
     z-index: -2;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    /* justify-content: inherit; */
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: -2;
+    flex-direction: column;
+    align-items: center;
 }
 
 .scroll{
@@ -301,8 +331,12 @@ section {
     color: white;
     font-size: 35px;
     position:absolute;
-    top: -15% !important;
+    top: -35%;
     left: 10% !important;
+}
+
+#section_title_portfolio{
+    top: -7% !important;
 }
   
 .section__subtitle {
@@ -358,19 +392,25 @@ section {
     color: white;
 }
 
+
 .portfolio__grid{
     align-items: center;
     justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: flex;
+    flex-direction: column; */
+    width: 70% !important;
+    height: auto ;
+}
+
+.portfolio{
+    font-size: 13px !important;
 }
 
 .portfolio__item{
     margin: auto;
     position: relative;
-    top: -30%;
-    width: 80% !important;
-    height: 25% !important;
+    width: auto;
+    height: auto;    
     text-align: center;
 }
 
