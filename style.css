@@ -68,9 +68,15 @@ a:hover{
     .navbar-nav .nav-link {
         padding-right: 24px !important;
     }
-
+    .fix-toggle{
+        padding-left: 72% !important;
+    }
+    .header{
+        display:inline-block !important;
+    }
     .navbar-nav {
         margin-left: auto !important;
+
     }
     .home__profile {
         height: 110px !important;
@@ -155,7 +161,18 @@ a:hover{
     section{
         padding: 0 0 !important;
     }
+    .scroll{
+        bottom: 9% !important;
+    }
 }
+
+@media (max-width: 435px){
+    #logo{
+        display: none !important;
+        position: initial !important;
+    }
+}
+
 
 
 section {
@@ -336,7 +353,7 @@ section {
 }
 
 #section_title_portfolio{
-    top: -7% !important;
+    top: -5% !important;
 }
   
 .section__subtitle {
@@ -396,10 +413,21 @@ section {
 .portfolio__grid{
     align-items: center;
     justify-content: center;
-    /* display: flex;
-    flex-direction: column; */
-    width: 70% !important;
-    height: auto ;
+    height: 370px !important;
+    width: 550px !important;
+    /* border: 1px solid rgba(79, 78, 78, 0.561); */
+    background:  transparent !important;
+    overflow-y: scroll !important;
+    margin-top: 50px;
+}
+
+.portfolio__grid::-webkit-scrollbar-thumb {
+    background-color: rgba(143, 140, 140, 0.507);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .portfolio{
