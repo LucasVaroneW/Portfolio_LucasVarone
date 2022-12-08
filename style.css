@@ -101,8 +101,8 @@ a:hover{
     }
 
     .portfolio__grid{
-        height: 600px !important;
-        width: 550px !important;
+        height: 420px !important;
+        width: auto !important;
         /* border: 1px solid rgba(79, 78, 78, 0.561); */
         background:  transparent !important;
         overflow-y: scroll !important;
@@ -163,6 +163,9 @@ a:hover{
     }
     .scroll{
         bottom: 9% !important;
+    }
+    .skill__item{
+        font-size: 25px !important;
     }
 }
 
@@ -348,7 +351,7 @@ section {
     color: white;
     font-size: 35px;
     position:absolute;
-    top: -35%;
+    top: -28%;
     left: 10% !important;
 }
 
@@ -413,11 +416,11 @@ section {
 .portfolio__grid{
     align-items: center;
     justify-content: center;
-    height: 370px !important;
-    width: 550px !important;
+    height: 370px ;
+    width: 550px ;
     /* border: 1px solid rgba(79, 78, 78, 0.561); */
-    background:  transparent !important;
-    overflow-y: scroll !important;
+    background:  transparent ;
+    overflow-y: scroll ;
     margin-top: 50px;
 }
 
