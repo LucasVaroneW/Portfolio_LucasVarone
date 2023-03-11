@@ -351,7 +351,7 @@ section {
     color: white;
     font-size: 35px;
     position:absolute;
-    top: -28%;
+    top: -12%;
     left: 10% !important;
 }
 
@@ -365,8 +365,49 @@ section {
     margin-bottom: 20px;
 }
 
-/* ---------------------------------------- About ---------------------------------------- */
+/* ---------------------------------------- carousel transition ---------------------------------------- */
 
+/* .carousel-inner .item {
+    transition: transform 0.6s ease-in-out !important;
+    -webkit-transition: transform 0.6s ease-in-out !important;
+    -moz-transition: transform 0.6s ease-in-out !important;
+    -ms-transition: transform 0.6s ease-in-out !important;
+    -o-transition: transform 0.6s ease-in-out !important;
+}
+  
+  .carousel-inner .active.left {
+    transform: translateX(-100%) !important;
+    -webkit-transform: translateX(-100%) !important;
+    -moz-transform: translateX(-100%) !important;
+    -ms-transform: translateX(-100%) !important;
+    -o-transform: translateX(-100%) !important;
+}
+  
+  .carousel-inner .active.right {
+    transform: translateX(100%) !important;
+    -webkit-transform: translateX(100%) !important;
+    -moz-transform: translateX(100%) !important;
+    -ms-transform: translateX(100%) !important;
+    -o-transform: translateX(100%) !important;
+}
+  
+  .carousel-inner .next {
+    transform: translateX(100%) !important;
+    -webkit-transform: translateX(100%) !important;
+    -moz-transform: translateX(100%) !important;
+    -ms-transform: translateX(100%) !important;
+    -o-transform: translateX(100%) !important;
+}
+  
+  .carousel-inner .prev {
+    transform: translateX(-100%) !important;
+    -webkit-transform: translateX(-100%) !important;
+    -moz-transform: translateX(-100%) !important;
+    -ms-transform: translateX(-100%) !important;
+    -o-transform: translateX(-100%) !important;
+} */
+
+/* ---------------------------------------- About ---------------------------------------- */
 
 .carousel-inner{
     height: 100vh;
@@ -412,6 +453,9 @@ section {
     color: white;
 }
 
+.btn-outline-light:hover {
+    color: #000 !important;
+  }
 
 .portfolio__grid{
     align-items: center;
@@ -494,6 +538,22 @@ section {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+}
+.modal-body{
+    position: relative;
+    display: flex;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.p-mail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
 }
 
 .modal-content{

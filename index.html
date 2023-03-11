@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,8 @@
     <link
         href='https://blogger.googleusercontent.com/img/a/AVvXsEj_mki8HZctnsjbx6Vk9L4Da_SWVVOdEI7WWol-9a-lHeICOUi0gkAEtqbihz4J8VFZYDxPFVJ0Yo9Sbw4SGcJCrVW2TEt5r-VZcv1Y6QA9U3zz2za3G3y7DKjSjOrweDKaK0Ei0bd8jGEtu8TgUi55k55QSiYg3czG6ua19wLnGtDCvHQaG7CSuXW0=s197'
         rel='shortcut icon' type='image/x-png'/>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>        
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src="https://kit.fontawesome.com/6a40a5ac66.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -19,32 +21,31 @@
 </head>
 <body>
     <!-- Navabar de todas la paginas  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" data-aos="fade-up">
       <div class="header">
         <a class="navbar-brand__title" id="logo2" href="#home"><img src="./imagenes/logo.png" id="logo"></a>
         <button class="navbar-toggler fix-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon collapsing"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav text-right" id="background-toggle">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home" data-ref="home">INICIO</a>
-                </li>
-                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="0">
-                    <a class="nav-link" onclick="downClick()">ACERCA DE MI</a>
-                </li>
-                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="1">
-                  <a class="nav-link" onclick="downClick()">HABILIDADES</a>
-              </li>
-                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="2">
-                    <a class="nav-link" onclick="downClick()">PORTFOLIO</a>
-                </li>
-                <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="3">
-                    <a class="nav-link" onclick="downClick()">CONTACTO</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav text-right" id="background-toggle">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" data-ref="home">HOME</a>
+            </li>
+            <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="0">
+              <a class="nav-link" onclick="downClick()">ABOUT ME</a>
+            </li>
+            <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="1">
+              <a class="nav-link" onclick="downClick()">SKILLS</a>
+            </li>
+            <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="2">
+              <a class="nav-link" onclick="downClick()">PORTFOLIO</a>
+            </li>
+            <li class="nav-item" data-target="#ejemploCarrusel" data-slide-to="3">
+              <a class="nav-link" onclick="downClick()">CONTACT</a>
+            </li>
+          </ul>
         </div>
       </div>
   </nav>
@@ -53,8 +54,8 @@
 
     <section id="home" class="home">
         <div class="home__background"></div>
-        <div class="home__description">
-            <span class="home__title--primary" id="item">¡Bienvenidos!</span>
+        <div class="home__description" data-aos="fade-up">
+            <span class="home__title--primary" id="item">¡Welcome!</span>
             <h1 class="home__title"><img src="./imagenes/logo.png" id="logo2">Lucas Varone</h1>
             <div>
               <span class="home__title--secondary" id="item">Full Stack Developer</span>
@@ -90,23 +91,60 @@
                       <img class="home__profile" alt="picture profile" src="./imagenes/perfil.jpg"/>
                     </picture>
                     <p class="text_about">
-                      <b>Me llamo Lucas Varone y soy desarrollador Full Stack</b>. con conocimiento en base de datos tanto SQL 
-                      como NoSQL. Realicé varios proyectos con React.JS y con Node.JS, que además son de mi preferencia. Actualmente soy Freelance, 
-                      realizando proyectos por mi cuenta y en búsqueda de retos aún mayores. Soy autodidacta y debido a eso desarrollo nuevas habilidades 
-                      de manera constante. Creo que trabajar en equipo es muy importante para lograr los mejores resultados y poder compartir la experiencia 
-                      de cada uno para poder ser mejor día a día.
+                      <b>My name is Lucas Varone and I'm a Full Stack developer</b> with knowledge in both SQL and NoSQL databases. I have completed several projects with Node.JS and React.js, which are also my preferred technologies. Recently, I had the opportunity to work as a Back-End developer on a gift card project, and I have also completed a training course in AWS cloud. I am self-taught and always looking for new challenges to continue improving my skills. I believe that working as a team is crucial to achieving the best results and sharing experiences to grow every day.
                     </p>
-                  </div>
+                  </div>                  
               </div>
             </div>
           </section>
         </div>
         
         <div class="carousel-item 2">
-          <h2 class="section__title">Mis habilidades:</h2>
+          <h2 class="section__title">My Skills:</h2>
           <section id="skill">
             <div class="container">
               <div class="row about__skills">
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <i class="fa-brands fa-node-js" style="color:#4e844a ;"></i>
+                  <div class="skill__name">Node</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <i class="fa-brands fa-react" style="color: var(--blueReact);"></i>
+                  <div class="skill__name">React</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <img id="skill__img" src="./imagenes/mysql.png" style="color: #26aee4;"></i>
+                  <div class="skill__name">MySql</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <img id="skill__img" src="./imagenes/postgresql.png" style="color: #26aee4;"></i>
+                  <div class="skill__name">PostreSQL</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <i class="fab fa-aws" style="color: #ff9900;"></i>
+                  <div class="skill__name">Amazon Service</div>
+                </div>
+                <!-- Elemento de Sequelize -->
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <img id="skill__img" src="./imagenes/sequelize.png" style="color: #257594;"></i>
+                  <div class="skill__name">Sequelize</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <i class="fab fa-js" style="color:#f0db4f ;"></i>
+                  <div class="skill__name">Javascript</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <img id="skill__img" src="./imagenes/python.png"></i>
+                  <div class="skill__name">Python</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <img id="skill__img" src="./imagenes/materialUI.svg" style="color: #355bb4;"></i>
+                  <div class="skill__name">MaterialUI</div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 skill__item">
+                  <i class="fab fa-git-alt" style="color: #e34c26;"></i>
+                  <div class="skill__name">GIT</div>
+                </div>
                 <div class="col-lg-3 col-sm-4 col-6 skill__item">
                   <i class="fab fa-html5" style="color: #e34c26;"></i>
                   <div class="skill__name">HTML</div>
@@ -116,32 +154,8 @@
                   <div class="skill__name">CSS</div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-6 skill__item">
-                  <i class="fab fa-js" style="color:#f0db4f ;"></i>
-                  <div class="skill__name">Javascript</div>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-6 skill__item">
-                  <i class="fab fa-git-alt" style="color: #e34c26;"></i>
-                  <div class="skill__name">GIT</div>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-6 skill__item">
                   <i class="fab fa-bootstrap" style="color:#563d7c;"></i>
                   <div class="skill__name">Bootstrap</div>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-6 skill__item">
-                  <i class="fa-brands fa-react" style="color: var(--blueReact);"></i>
-                  <div class="skill__name">React</div>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-6 skill__item">
-                  <i class="fa-brands fa-node-js" style="color:#4e844a ;"></i>
-                  <div class="skill__name">Node</div>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-6 skill__item">
-                  <img id="skill__img" src="./imagenes/mysql.png" style="color: #26aee4;"></i>
-                  <div class="skill__name">MySql</div>
-                </div>
-                <div class="col-lg-3 col-sm-4 col-6 skill__item">
-                  <img id="skill__img" src="./imagenes/postgresql.png" style="color: #26aee4;"></i>
-                  <div class="skill__name">PostreSQL</div>
                 </div>
               </div>
             </div>
@@ -152,105 +166,83 @@
           <h2 class="section__title" id="section_title_portfolio">Portfolio:</h2>
           <section id="portfolio" class="portfolio">
             <div class="container">
-                <div class="portfolio__grid mobile">
-                  <div class="portfolio__item" id="delay_2">
-                    <h2 class="portfolio__title">Dashboard personal</h2>
-                    <p class="portfolio__description"> El Dashboard personal es un proyecto para poder
-                       llevar un orden de tu economía, pudiendo apreciar tus gastos e ingresos.
-                       el Dashboard cuenta con varias funciones para ingresar nuevos registros, logearte, ordenar tus registros, entre otros.                                   
-                    </p>
-                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/Dashboard-Alkemy" role="button" id="button__git">GitHub</a>
-                  </div>
-                  <div class="portfolio__item" id="delay_2">
-                    <h2 class="portfolio__title">Mi Billetera Digital de Criptomonedas</h2>
-                    <p class="portfolio__description">La Billetera digital, 
-                      es un software que permite almacenar fondos en plataformas electrónicas; 
-                      realizar transacciones de pago de bienes y servicios, y recibir pagos de otras fuentes. 
-                      Estos monederos o billeteras digitales funcionan como cuentas de custodia electrónica que actúan 
-                      como depositarios de fondos en distintos tipos de monedas o hasta cupones electrónicos.               
-                    </p>
-                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/billetera_criptomonedas" role="button" id="button__git">GitHub</a>
-                  </div>
-                  <div class="portfolio__item" id="delay_2">
-                    <h2 class="portfolio__title">Blog de viajes</h2>
-                    <p class="portfolio__description">El blog de viajes es un proyecto desarrollado con Node.Js y Express.Js con la finalidad que se allí se comparta
-                      la experiencia de cada usuario en sus viajes. Este blog esta desarrollado con Mysql. Además que desarrolle su propia API Rest para que
-                       otros usuarios puedan interactuar con el sitio desde otros sistemas.             
-                    </p>
-                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/blog_de_viajes" role="button" id="button__git">GitHub</a>
-                  </div>
-                  <div class="portfolio__item">
-                    <h2 class="portfolio__title">Paseando Ando</h2>
-                    <p class="portfolio__description">“Paseando Ando” consiste en una aplicación Web que ofrece al usuario posibles destinos de paseos turísticos
-                       en las cercanías a un lugar. La idea es que el usuario pueda consultar sitios turísticos para visitar indicando el lugar de origen y destino.
-                        La aplicación le ofrece una serie de sitios y le indica varias formas de llegar a ese sitio desde su origen. El usuario selecciona una ruta, la cual se
-                          muestra en un mapa. Además, cuando el usuario ingresa el destino, se le muestran algunas fotos del sitio, la calificación que tiene, el horario
-                           de apertura y comentarios si existen.                
-                    </p>
-                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/paseando_ando" role="button" id="button__git">GitHub</a>
-                  </div>
-                  <div class="portfolio__item" id="delay_2">
-                    <h2 class="portfolio__title">Escuela Aprende y Disfruta</h2>
-                    <p class="portfolio__description">Escuela Aprende y Disfruta es un proyecto donde se muestran diferentes eventos que organiza dicha escuela y se
-                      hace uso de Vanilla JS para ofrecer soporte a varias funcionalidades dinámicas y atractivas para mostrar sus eventos en detalle.              
-                    </p>
-                    <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/Escuela_aprende_disfruta" role="button" id="button__git">GitHub</a>
-                  </div>
+              <div class="portfolio__grid mobile">
+                <div class="portfolio__item" id="delay_2">
+                  <h2 class="portfolio__title">GiftBlane</h2>
+                  <p class="portfolio__description">GiftBlane is a gift card project built with Next.js, Tailwind, and TypeScript. We use Node.js, Express, and MySQL for the backend. This project is maintained by a team of 15 people dedicated to providing an exceptional user experience.</p>
+                  <a class="btn btn-outline-light" href="#" role="button" id="button__git">GitHub</a>
+                </div>
+                <div class="portfolio__item" id="delay_2">
+                  <h2 class="portfolio__title">Personal Dashboard</h2>
+                  <p class="portfolio__description">The Personal Dashboard is a project to keep track of your finances, allowing you to see your expenses and income. The Dashboard has several functions to add new records, log in, sort your records, among others.</p>
+                  <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/Dashboard-Alkemy" role="button" id="button__git">GitHub</a>
+                </div>
+                <div class="portfolio__item" id="delay_2">
+                  <h2 class="portfolio__title">My Cryptocurrency Digital Wallet</h2>
+                  <p class="portfolio__description">The digital wallet is a software that allows you to store funds on electronic platforms, make payment transactions for goods and services, and receive payments from other sources. These digital wallets function as electronic custody accounts that act as depositaries of funds in different types of currencies or even electronic coupons.</p>
+                  <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/billetera_criptomonedas" role="button" id="button__git">GitHub</a>
+                </div>
+                <div class="portfolio__item" id="delay_2">
+                  <h2 class="portfolio__title">Travel Blog</h2>
+                  <p class="portfolio__description">The Travel Blog is a project developed with Node.js and Express.js with the purpose of sharing each user's experience in their travels. This blog is developed with MySQL. I also developed its own REST API so that other users can interact with the site from other systems.</p>
+                  <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/blog_de_viajes" role="button" id="button__git">GitHub</a>
+                </div>
+                <div class="portfolio__item">
+                  <h2 class="portfolio__title">Paseando Ando</h2>
+                  <p class="portfolio__description">“Paseando Ando” is a web application that offers the user possible tourist walks in the vicinity of a place. The idea is that the user can consult tourist sites to visit by indicating the place of origin and destination. The application offers a series of sites and indicates several ways to get to that site from its origin. The user selects a route, which is shown on a map. In addition, when the user enters the destination, some photos of the site, the rating it has, the opening hours, and comments if they exist are
+                  <a class="btn btn-outline-light" href="https://github.com/LucasVaroneW/paseando_ando" role="button" id="button__git">GitHub</a>
+                </div>
               </div>
             </div>
           </section>
         </div>
 
         <div class="carousel-item 4">
-          <h2 class="section__title">Contacto:</h2>
+          <h2 class="section__title">Contact:</h2>
           <section id="contact">
             <div class="container">
-              <h3 class="section__subtitle">¿Quiéres contactarme para conocer un poco más sobre mí?</h3>
+              <h3 class="section__subtitle">Do you want to contact me to know a little more about me?</h3>
               <div class="contact__grid">
-                  <p>Puede contactarme a través de cualquiera de mis redes sociales.</p>
-                  <div class="contact">
-                    <button class="btn link btn-outline contact__link" onclick="location.href='https://www.instagram.com/varonelucas/'" target="_blank">
-                      <i class="fab fa-instagram" style="color: rgb(207, 94, 109);"></i>
-                    </button>
-                    <button class="btn btn-outline contact__link" onclick="location.href='https://github.com/LucasVaroneW'" target="_blank" rel="noopener noreferrer">
-                      <i class="fab fa-github-square" style="color: #e0dbdb !important;"></i>
-                    </button>
-                    <!-- <button class="btn btn-outline contact__link" type="button" data-toggle="modal" data-target="#exampleModal" id="show__form">
-                      <i class="far fa-envelope" style="color: white;"></i>
-                    </button> -->
-                    <button class="btn btn-outline contact__link" onclick="location.href='https://www.linkedin.com/in/lucasvaronew/'" target="_blank" rel="noopener noreferrer">
-                      <i class="fab fa-linkedin-in" style="color: rgb(25, 56, 160) !important;"></i>
-                    </button>
+                <p>You can contact me through any of my social networks.</p>
+                <div class="contact">
+                  <button class="btn link btn-outline contact__link" onclick="location.href='https://www.instagram.com/varonelucas/'" target="_blank">
+                    <i class="fab fa-instagram" style="color: rgb(207, 94, 109);"></i>
+                  </button>
+                  <button class="btn btn-outline contact__link" onclick="location.href='https://github.com/LucasVaroneW'" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github-square" style="color: #e0dbdb !important;"></i>
+                  </button>
+                  <button class="btn btn-outline contact__link" onclick="location.href='https://www.linkedin.com/in/lucasvaronew/'" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in" style="color: rgb(25, 56, 160) !important;"></i>
+                  </button>
+                  <button class="btn btn-outline contact__link" data-toggle="modal" data-target="#exampleModal">
+                    <i class="far fa-envelope" style="color: #e0dbdb !important;"></i>
+                  </button>
                 </div>
               </div>
             </div>
           </section>
+          
+          <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <!-- <div class="modal-header">
-                  <button type="button" class="close bg-transparent" data-dismiss="modal" aria-label="Close">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Send me an email:</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                </div> -->
+                </div>
                 <div class="modal-body">
-                  <h5 class="modal-title" id="exampleModalLabel">Envieme un email:</h5>
-                  <form>
-                    <div class="form-group m-4 p-4">
-                      <label for="email">Correo Electrónico:</label>
-                      <input type="email" class="form-control border-0 bg-transparent" id="email" placeholder="ejemplo@gmail.com">
-                      <label for="text">Comentario:</label>
-                      <textarea class="form-control border-0 bg-transparent" id="text" rows="3"></textarea>
-                    </div>
-                    <div class="text-right">
-                      <button type="submit" class="btn btn-light shadow-lg p-3 mb-5 bg-white rounded" id="btn_modal">Enviar</button>
-                    </div>
-                  </form>
+                  <p class="p-mail" id="text">lucasvaronebio@gmail.com</p>
+                  <button class="btn btn-outline"  onclick="copyText()" value="lucasvaronebio@gmail.com">
+                    <i class="fas fa-copy" style="color: #e0dbdb !important;"></i>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
       <a
         class="carousel-control-prev"
@@ -279,12 +271,47 @@
     </div>
     <!-- <footer>
       <div>
-          <h5>@Todos los derechos Reservados.</h5>
+          <h5>@Hecho con amor por Lucas Varone</h5>
       </div>
   </footer> -->
 </body>
 
-<script src="./script.js" name="script_"></script>
+<script>
+  AOS.init({
+    offset: 200, // distancia (en píxeles) desde el borde superior de la ventana antes de que se inicie la animación
+    duration: 1000, // duración de la animación (en milisegundos)
+    easing: 'ease-in-out', // tipo de transición
+    delay: 100, // retraso (en milisegundos) antes de que se inicie la animación
+    once: true // animar solo una vez
+  });
+
+  function copyText() {
+        // Get the text inside the <p> tag
+        var text = document.querySelector('#text').innerText;
+        
+        // Create a temporary textarea element to copy the text
+        var tempTextArea = document.createElement('textarea');
+        tempTextArea.value = text;
+        document.body.appendChild(tempTextArea);
+        
+        // Select the text inside the textarea element
+        tempTextArea.select();
+        
+        // Copy the text to the clipboard
+        document.execCommand('copy');
+        
+        // Remove the temporary textarea element
+        document.body.removeChild(tempTextArea);
+  }
+
+  function downClick(){
+    $('html, body').animate({scrollTop: $('#ejemploCarrusel').offset().top})
+  }
+
+  $("a[href='#home']").click(function() {
+    $("html, body").animate({ scrollTop: $("#home").offset().top });
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
