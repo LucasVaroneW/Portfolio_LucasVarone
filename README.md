@@ -1,24 +1,22 @@
-## Portfolio personal
-Aquí pueden ver el código de mi portfolio personal, el cual está desarrollado con HTML, CSS, Jquery y Bootstrap.
+## Personal Portfolio
 
-## Herramientas utilizadas 🛠️
+Here you can find the code for my personal portfolio, which was developed using HTML, CSS, Jquery and Bootstrap.
 
+## Tools Used 🛠️
 
-* [Bootstrap](https://getbootstrap.com/) - Framework frontend
-* [Jquery](https://jquery.com/) - Framework frontend
-* [Visual Studo Code](https://code.visualstudio.com/) - IDE
+* [Bootstrap](https://getbootstrap.com/) - Frontend Framework
+* [Jquery](https://jquery.com/) - Frontend Framework
+* [Visual Studio Code](https://code.visualstudio.com/) - IDE
 
-## Versionado 📌
+## Version Control 📌
 
-Usamos [GitHub](https://github.com/) para el versionado.
+We use [GitHub](https://github.com/) for version control.
 
-### Descripción
-Este portfolio está dividido en 2 secciones principales, la primera es una presentación, la segunda sección hay un slider donde está toda mi información personal
+### Description
+This portfolio is divided into 2 main sections. The first section is an introduction, while the second section contains a slider with all my personal information.
 
-
-### Objetivo
-El objetivo de este proyecto era realizar un portfolio personal y visualizarlo en múltiples dispositivos.
-
+### Objective
+The objective of this project was to create a personal portfolio that can be viewed on multiple devices.
 
 --
-⌨️ con ❤️ por [Lucas Varone](https://github.com/LucasVaroneW) �
+⌨️ with ❤️ by [Lucas Varone](https://github.com/LucasVaroneW)
